@@ -30,25 +30,103 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body class="poppins bg-[#F4F7FF]">
-    <header class="pt-5">
-      <div class="w-[90%] mx-auto p-4 border-none rounded-xl  bg-[#FFFFFF]">
-        <div class="flex items-center gap-x-1">
-          <div>
-            <img class="w-6" src="./assets/logo.png" alt="" />
+    <div class="w-[90%] mx-auto">
+      <header class="py-5">
+        <div
+          class="container mx-auto p-4 border-none rounded-xl flex justify-between bg-[#FFFFFF]"
+        >
+          <div class="flex items-center gap-x-1">
+            <div>
+              <img class="w-6" src="./assets/logo.png" alt="" />
+            </div>
+            <div>
+              <h1>
+                <span class="text-[#00303C]">Dev</span
+                ><span class="text-[#00303C] font-bold">Board</span>
+              </h1>
+            </div>
           </div>
-          <div>
-           <h1><span class="text-[#00303C]">Dev</span><span class="text-[#00303C] font-bold">Board</span></h1>
+          <!-- right side -->
+          <div class="flex gap-x-7">
+            <div
+              class="flex items-center gap-x-2 border-none rounded-3xl bg-[#F4F7FF] px-4"
+            >
+              <div>
+                <img src="./assets/checkbox.png" class="w-5" alt="" />
+              </div>
+              <div>
+                <span class="font-bold">23</span>
+              </div>
+            </div>
+            <div class="rounded-full bg-[#F4F7FF] border-none p-2 w-11">
+              <img src="./assets/theme-btn.png" alt="" />
+            </div>
           </div>
         </div>
-        <div>
-          <div></div>
+      </header>
+
+      <main>
+        <!-- container of the hero two section -->
+        <div
+          class="container mx-auto min-h-screen  "
+        >
+          <!-- container of the left hero section -->
+            <div class="p-5 w-[60%] bg-[#FFFF]   border-none rounded-2xl ">
+             
+<!-- left top hero section container -->
+<div class="flex justify-around gap-x-5 border-b border-[#989ec1] border-dashed pb-7">
+   <!--upper left  div -->
+   <div
+   class="bg-[#F4F7FF] flex justify-center items-center gap-x-3 p-4 border-none rounded-2xl"
+ >
+   <div class="p-3 border-none rounded-full bg-[#ffff]">
+     <img src="./assets/checkbox.png" class="w-4" alt="" />
+   </div>
+   <div class="flex flex-col">
+     <span class="text-[#00303C] font-medium">Task Assigned</span>
+     <span class="font-bold text-2xl">05</span>
+   </div>
+ </div>
+
+ <!-- upper middle div -->
+ <div
+   class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] ... flex justify-center items-center gap-x-3 px-8 border-none rounded-2xl p-"
+ >
+   <div class="">
+     <img src="./assets/board.png" alt="" />
+   </div>
+   <div>
+     <p class="text-[#FFFFFF]">
+       Discover Something <br />New Today!
+     </p>
+   </div>
+ </div>
+
+ <!-- upper right div -->
+
+ <div
+   class="flex justify-center items-center gap-x-5 bg-[#F4F7FF] p-4 border-none rounded-2xl"
+ >
+   <div class="p-3 border-none rounded-full bg-[#ffff]">
+     <img class="w-5" src="./assets/calender.png" alt="" />
+   </div>
+   <div>
+     <span>Wed,<br />Jul 28 2025 </span>
+   </div>
+ </div>
+</div>
+<!-- left bottom hero section container -->
+
+
+
+            </div>
+          
+
           <div></div>
         </div>
-      </div>
-    </header>
+      </main>
 
-    <main></main>
-
-    <footer></footer>
+      <footer></footer>
+    </div>
   </body>
 </html>
