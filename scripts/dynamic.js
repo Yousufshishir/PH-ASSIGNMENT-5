@@ -1,13 +1,12 @@
-
-// document.getElementById("disable").style.display = 'none'
-
-let disabledButton = document.querySelectorAll(".disable")
+let count=0
 let buttons = document.querySelectorAll(".completed-btn")
-
 for(let i=0;i<buttons.length;i++){
-    document.getElementById(`completed-btn-${i+1}`).style.display='block'
+    document.getElementById(`completed-btn-${i+1}`).style.display='block';
 
-    document.getElementById(`disable-${i+1}`).style.display = 'none'
+    document.getElementById(`disable-${i+1}`).style.display = 'none';
+
+
+    // creating function for operations
 buttons[i].addEventListener("click",function(event){
 
 event.preventDefault();
@@ -18,6 +17,8 @@ alert("Board Updated Successfully")
 const taskNumber=document.getElementById('task-assigned-id').innerText
 const convertedTaskNumber=parseInt(taskNumber)
 document.getElementById('task-assigned-id').innerText=convertedTaskNumber-1
+
+
 
 // navbar countdown increment
 const navCount = document.getElementById("nav-number").innerText;
@@ -30,6 +31,8 @@ convertedNavCount + 1;
         document.getElementById(`completed-btn-${i+1}`).style.display='none'
 
         document.getElementById(`disable-${i+1}`).style.display = 'block'
+
+
 
 
 
@@ -57,9 +60,21 @@ container.appendChild(d)
 
 
 
+// completed alert message
+count++;
+if(count===buttons.length){
+
+    alert("Congrates!!!You have completed all the current tasks🥳🥳🎉🎉")
+}
+
 })
 
 }
+
+
+
+
+
 // clearing history
 
 document.getElementById("clear-button").addEventListener("click",function(){
@@ -70,6 +85,8 @@ document.getElementById("history-container").innerHTML=""
 
 
 // challenge part
+
+/*----------------------------------------------------------------- */
 // show current date
 function currentDate() {
     const today = new Date();
@@ -78,6 +95,10 @@ function currentDate() {
 }
 
 document.getElementById("hero-date").innerText=currentDate()
+
+
+
+
 
 // change theme
 
@@ -89,8 +110,6 @@ document.getElementById("theme-btn").addEventListener("click",function(){
 
 
 })
-
-
 function randomColorGenerator(){
 
 const red = Math.floor(Math.random()*256)
@@ -102,4 +121,6 @@ return `rgb(${red}, ${green}, ${blue})`
 }
 
 
+
+// 
 
