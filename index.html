@@ -29,11 +29,14 @@
     <!-- Tailwind CSS -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
+
+
+  <!-- body part -->
   <body class="poppins bg-[#F4F7FF]">
     <div class="w-[90%] mx-auto">
       <header class="py-5">
         <div
-          class="container mx-auto p-4 border-none rounded-xl flex justify-between bg-[#FFFFFF]"
+          class="container mx-auto p-4 border-none rounded-xl flex justify-between bg-[#FFFFFF] drop-shadow-lg"
         >
           <div class="flex items-center gap-x-1">
             <div>
@@ -47,7 +50,7 @@
             </div>
           </div>
           <!-- right side -->
-          <div class="flex gap-x-7">
+          <div class="flex gap-x-7 drop-shadow-lg">
             <div
               class="flex items-center gap-x-2 border-none rounded-3xl bg-[#F4F7FF] px-4"
             >
@@ -67,12 +70,12 @@
 
       <main>
         <!-- container of the hero two section -->
-        <div class="container mx-auto min-h-screen pb-32 flex gap-5">
+        <div class="container mx-auto min-h-screen pb-16 flex gap-5 drop-shadow-lg">
           <!-- container of the left hero section -->
-          <div class="p-5 w-[75%] bg-[#FFFF] border-none rounded-2xl">
+          <div class="p-5 w-[75%] bg-[#FFFF] border-none rounded-2xl ">
             <!-- left top hero section container -->
             <div
-              class="flex justify-around border-b border-[#989ec1] border-dashed pb-7"
+              class="flex justify-around border-b border-[#989ec1] border-dashed pb-7 drop-shadow-lg"
             >
               <!--upper left  div -->
               <div
@@ -90,8 +93,8 @@
               </div>
 
               <!-- upper middle div -->
-              <div
-                class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] ... flex justify-center items-center gap-x-3 px-8 border-none rounded-2xl p-"
+              <div id="question-tasks"
+                class="cursor-pointer bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] ... flex justify-center items-center gap-x-3 px-8 border-none rounded-2xl p-"
               >
                 <div class="">
                   <img src="./assets/board.png" alt="" />
@@ -117,8 +120,8 @@
               </div>
             </div>
             <!-- left bottom hero section container -->
-            <div class="mt-7 flex flex-wrap gap-y-3 justify-between">
-              <div class="pt-5 px-5 pb-5 bg-[#F4F7FF] rounded-xl w-[32%]">
+            <div class="mt-7 flex flex-wrap gap-y-3 justify-between drop-shadow-md">
+              <div class="pt-5 px-5 pb-5 bg-[#F4F7FF] rounded-xl w-[32%] ">
                 <span
                   class="bg-[#ffff] py-2 px-3 rounded-lg text-[#00303C] text-xs"
                 >
@@ -149,7 +152,7 @@
                   <div>
                     <button
                       id="completed-btn-1"
-                      class="completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      class="drop-shadow-lg completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
@@ -194,7 +197,7 @@
                   <div>
                     <button
                       id="completed-btn-2"
-                      class="completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      class="drop-shadow-lg completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
@@ -239,7 +242,7 @@
                   <div>
                     <button
                       id="completed-btn-3"
-                      class="completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      class="drop-shadow-lg completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
@@ -284,13 +287,13 @@
                   <div>
                     <button
                       id="completed-btn-4"
-                      class="btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      class="drop-shadow-lg btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
                     <button
                     id="disable-4"
-                    class="btn font-medium rounded-lg px-2 text-xs"
+                    class=" btn font-medium rounded-lg px-2 text-xs"
                     disabled="disabled"
                   >
                     Completed
@@ -329,7 +332,7 @@
                   <div>
                     <button
                       id="completed-btn-5"
-                      class="btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      class="drop-shadow-lg btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
@@ -374,7 +377,7 @@
                   <div>
                     <button
                       id="completed-btn-6"
-                      class="btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      class="drop-shadow-lg btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
@@ -392,7 +395,7 @@
           </div>
 
           <!-- container of the right hero section -->
-          <div class="w-[25%] p-5 bg-[#FFFF] border-none rounded-2xl">
+          <div class="w-[25%] p-5 bg-[#FFFF] border-none rounded-2xl ">
             <!-- upper right container -->
             <div
               class="flex flex-col justify-start items-center gap-5 border-b border-dashed pb-5 border-[#d6d9eb]"
@@ -409,7 +412,7 @@
             </div>
 
 <!-- history section -->
-<div id="history-container" class="mt-4 flex flex-col gap-y-3">
+<div id="history-container" class="mt-4 flex flex-col gap-y-3 drop-shadow-md">
 
 </div>
 
