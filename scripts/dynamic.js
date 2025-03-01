@@ -34,6 +34,10 @@ convertedNavCount + 1;
 
 
         // history section
+        function getCurrentTime() {
+            const now = new Date();
+            return now.toLocaleTimeString(); 
+        }
 const title=document.getElementById(`task-${i+1}`).innerText
 
 const container=document.getElementById("history-container")
@@ -41,8 +45,10 @@ const container=document.getElementById("history-container")
 const d=document.createElement("div")
 d.classList.add("bg-[#F4F7FF]", "rounded-2xl","p-2")
 
+
+
 const p=document.createElement("p")
-p.innerText=` You have completed the task "${title}"`
+p.innerText=` You have completed the task "${title}" at ${getCurrentTime()}`
 
 
 d.appendChild(p)
