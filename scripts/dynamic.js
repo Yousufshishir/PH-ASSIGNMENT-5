@@ -69,12 +69,12 @@ document.getElementById("history-container").innerHTML=""
 })
 
 
-// for(let j=4;j<=buttons.length;j++){
+// challenge part
+// show current date
+function currentDate() {
+    const now = new Date();
+    const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
+    return now.toLocaleDateString('en-US', options);
+}
 
-//     if(getElementById(`completed-btn-${j}`))
-//     {
-// document.getElementById(`completed-btn-${j}`).style.display='none'
-// document.getElementById("disable").style.display = 'block'
-//     }
-
-// }
+document.getElementById("hero-date").innerText=currentDate()
