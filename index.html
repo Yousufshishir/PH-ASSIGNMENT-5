@@ -55,7 +55,7 @@
                 <img src="./assets/checkbox.png" class="w-5" alt="" />
               </div>
               <div>
-                <span class="font-bold">23</span>
+                <span id="nav-number" class="font-bold">23</span>
               </div>
             </div>
             <div class="rounded-full bg-[#F4F7FF] border-none p-2 w-11">
@@ -69,10 +69,10 @@
         <!-- container of the hero two section -->
         <div class="container mx-auto min-h-screen pb-32 flex gap-5">
           <!-- container of the left hero section -->
-          <div class="p-5 w-[70%] bg-[#FFFF] border-none rounded-2xl">
+          <div class="p-5 w-[75%] bg-[#FFFF] border-none rounded-2xl">
             <!-- left top hero section container -->
             <div
-              class="flex justify-around gap-x-5 border-b border-[#989ec1] border-dashed pb-7"
+              class="flex justify-around border-b border-[#989ec1] border-dashed pb-7"
             >
               <!--upper left  div -->
               <div
@@ -83,7 +83,9 @@
                 </div>
                 <div class="flex flex-col">
                   <span class="text-[#00303C] font-medium">Task Assigned</span>
-                  <span class="font-bold text-2xl">06</span>
+                  <span class="font-bold text-2xl" id="task-assigned-id"
+                    >06</span
+                  >
                 </div>
               </div>
 
@@ -122,7 +124,7 @@
                 >
                   ShopEase
                 </span>
-                <p class="mt-5 text-sm font-medium text-[#00303C]">
+                <p id="task-1" class="mt-5 text-sm font-medium text-[#00303C] ">
                   Fix Mobile Button Issue
                 </p>
 
@@ -146,7 +148,15 @@
                   </div>
                   <div>
                     <button
-                      class="btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      id="completed-btn-1"
+                      class="completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                    >
+                      Completed
+                    </button>
+                    <button
+                      id="disable-1"
+                      class="btn font-medium rounded-lg px-2 text-xs"
+                      disabled="disabled"
                     >
                       Completed
                     </button>
@@ -159,7 +169,7 @@
                 >
                   CloudSync
                 </span>
-                <p class="mt-5 text-sm font-medium text-[#00303C]">
+                <p id="task-2" class="mt-5 text-sm font-medium text-[#00303C]">
                   Add Dark Mode
                 </p>
 
@@ -183,10 +193,18 @@
                   </div>
                   <div>
                     <button
-                      class="btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      id="completed-btn-2"
+                      class="completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
+                    <button
+                    id="disable-2"
+                    class="btn font-medium rounded-lg px-2 text-xs"
+                    disabled="disabled"
+                  >
+                    Completed
+                  </button>
                   </div>
                 </div>
               </div>
@@ -196,7 +214,7 @@
                 >
                   SwiftPay
                 </span>
-                <p class="mt-5 text-sm font-medium text-[#00303C]">
+                <p id="task-3" class="mt-5 text-sm font-medium text-[#00303C]">
                   Optimize Home page
                 </p>
 
@@ -220,10 +238,18 @@
                   </div>
                   <div>
                     <button
-                      class="btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      id="completed-btn-3"
+                      class="completed-btn btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
+                    <button
+                    id="disable-3"
+                    class="btn font-medium rounded-lg px-2 text-xs"
+                    disabled="disabled"
+                  >
+                    Completed
+                  </button>
                   </div>
                 </div>
               </div>
@@ -233,7 +259,7 @@
                 >
                   Meta
                 </span>
-                <p class="mt-5 text-sm font-medium text-[#00303C]">
+                <p id="task-4" class="mt-5 text-sm font-medium text-[#00303C]">
                   Add new emoji 🤲
                 </p>
 
@@ -257,10 +283,18 @@
                   </div>
                   <div>
                     <button
-                      class="btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      id="completed-btn-4"
+                      class="btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
+                    <button
+                    id="disable-4"
+                    class="btn font-medium rounded-lg px-2 text-xs"
+                    disabled="disabled"
+                  >
+                    Completed
+                  </button>
                   </div>
                 </div>
               </div>
@@ -270,7 +304,7 @@
                 >
                   Google LLC
                 </span>
-                <p class="mt-5 text-sm font-medium text-[#00303C]">
+                <p id="task-5" class="mt-5 text-sm font-medium text-[#00303C]">
                   Integrate OpenAI API
                 </p>
 
@@ -294,10 +328,18 @@
                   </div>
                   <div>
                     <button
-                      class="btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      id="completed-btn-5"
+                      class="btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
+                    <button
+                    id="disable-5"
+                    class="btn font-medium rounded-lg px-2 text-xs"
+                    disabled="disabled"
+                  >
+                    Completed
+                  </button>
                   </div>
                 </div>
               </div>
@@ -307,7 +349,7 @@
                 >
                   Glassdoar
                 </span>
-                <p class="mt-5 text-sm font-medium text-[#00303C]">
+                <p id="task-6" class="mt-5 text-sm font-medium text-[#00303C]">
                   Improve Job searching
                 </p>
 
@@ -331,10 +373,18 @@
                   </div>
                   <div>
                     <button
-                      class="btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
+                      id="completed-btn-6"
+                      class="btn completed-btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg px-2 text-xs"
                     >
                       Completed
                     </button>
+                    <button
+                    id="disable-6"
+                    class="btn font-medium rounded-lg px-2 text-xs"
+                    disabled="disabled"
+                  >
+                    Completed
+                  </button>
                   </div>
                 </div>
               </div>
@@ -342,19 +392,26 @@
           </div>
 
           <!-- container of the right hero section -->
-          <div class="w-[30%] p-5 bg-[#FFFF] border-none rounded-2xl ">
+          <div class="w-[25%] p-5 bg-[#FFFF] border-none rounded-2xl">
             <!-- upper right container -->
-            <div class="flex flex-col justify-start items-center gap-5 border-b-[#3752FD33] border-dashed border pb-5 border-l-white border-t-white border-r-white">
+            <div
+              class="flex flex-col justify-start items-center gap-5 border-b border-dashed pb-5 border-[#d6d9eb]"
+            >
               <div class="flex justify-center items-center gap-2">
                 <img class="w-4" src="./assets/activity.png" alt="" />
                 <span>Activity Log</span>
               </div>
-              <button
-              class="px-5 btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg  text-xs"
-            >
-              Clear History
-            </button>
+              <button id="clear-button"
+                class="px-5 btn bg-[#3752FD] text-[#FFFFFF] font-medium rounded-lg text-xs"
+              >
+                Clear History
+              </button>
             </div>
+
+<!-- history section -->
+<div id="history-container">
+
+</div>
 
           </div>
         </div>
@@ -362,5 +419,6 @@
 
       <footer></footer>
     </div>
+    <script src="./scripts/dynamic.js"></script>
   </body>
 </html>
