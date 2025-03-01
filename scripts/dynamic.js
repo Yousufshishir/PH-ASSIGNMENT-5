@@ -72,9 +72,34 @@ document.getElementById("history-container").innerHTML=""
 // challenge part
 // show current date
 function currentDate() {
-    const now = new Date();
-    const options = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
-    return now.toLocaleDateString('en-US', options);
+    const today = new Date();
+    const format = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
+    return today.toLocaleDateString('en-US', format);
 }
 
 document.getElementById("hero-date").innerText=currentDate()
+
+// change theme
+
+
+document.getElementById("theme-btn").addEventListener("click",function(){
+
+    const randomColor= randomColorGenerator();
+    document.body.style.backgroundColor=randomColor;
+
+
+})
+
+
+function randomColorGenerator(){
+
+const red = Math.floor(Math.random()*256)
+const green = Math.floor(Math.random()*256)
+const blue = Math.floor(Math.random()*256)
+
+return `rgb(${red}, ${green}, ${blue})`
+
+}
+
+
+
