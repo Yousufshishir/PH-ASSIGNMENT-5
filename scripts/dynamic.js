@@ -43,11 +43,12 @@ const title=document.getElementById(`task-${i+1}`).innerText
 const container=document.getElementById("history-container")
 
 const d=document.createElement("div")
-d.classList.add("bg-[#F4F7FF]", "rounded-2xl","p-2")
+d.classList.add("bg-[#F4F7FF]", "rounded-2xl","p-5");
 
 
 
 const p=document.createElement("p")
+p.classList.add("text-[#000000]","font-normal","text-sm");
 p.innerText=` You have completed the task "${title}" at ${getCurrentTime()}`
 
 
